@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Prueba 1') {
+            steps {
+                echo 'Ejecuntando estado 1'
+            }
+        }
+        stage('Prueba 2'){
+            steps{
+                echo 'Ejecutando estado 2'
+                sleep 30
+            }
+        }
+        stage('Prueba 3'){
+            steps{
+                echo 'Ejecutando estado 3'
+            }
+        }
+    }
+}
